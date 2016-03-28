@@ -1,0 +1,159 @@
+.loading-ball-box{
+	z-index:999;
+	height: 60px;
+	width: 60px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	border-radius: 7px;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+			transform: translateX(-50%) translateY(-50%);
+}
+.loading-ball-layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #333;
+    opacity: .8;
+    border-radius: 10px;
+}
+.ball-clip-rotate-multiple {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	margin: -20px 0 0 -20px;
+	z-index:999;
+}
+.ball-clip-rotate-multiple > div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 2px solid #fff;
+  border-bottom-color: transparent;
+  border-top-color: transparent;
+  border-radius: 100%;
+  height: 35px;
+  width: 35px;
+  -webkit-animation-fill-mode: both;
+    	    animation-fill-mode: both;
+  -webkit-animation: rotate 1s 0s ease-in-out infinite;
+          animation: rotate 1s 0s ease-in-out infinite;
+}
+.ball-clip-rotate-multiple > div:last-child {
+  display: inline-block;
+  top: 10px;
+  left: 10px;
+  width: 15px;
+  height: 15px;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  border-color: #fff transparent #fff transparent;
+  -webkit-animation-direction: reverse;
+          animation-direction: reverse;
+  }
+ @-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg) scale(1);
+            transform: rotate(0deg) scale(1); }
+  50% {
+    -webkit-transform: rotate(180deg) scale(0.6);
+            transform: rotate(180deg) scale(0.6); }
+  100% {
+    -webkit-transform: rotate(360deg) scale(1);
+            transform: rotate(360deg) scale(1); }
+ }
+ @keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg) scale(1);
+            transform: rotate(0deg) scale(1); }
+  50% {
+    -webkit-transform: rotate(180deg) scale(0.6);
+            transform: rotate(180deg) scale(0.6); }
+  100% {
+    -webkit-transform: rotate(360deg) scale(1);
+            transform: rotate(360deg) scale(1); }
+ }
+ .fadeIn{
+   	-webkit-animation-name: fadeInKey; /*动画名称*/
+	-webkit-animation-duration: 1.2s; /*动画持续时间*/
+	-webkit-animation-iteration-count: 1; /*动画次数*/
+	-webkit-animation-delay: 0s; /*延迟时间*/
+	opacity: 1;
+	z-index: 999;
+}
+   @-webkit-keyframes fadeInKey {
+	0% {
+	opacity: 0; /*初始状态 透明度为0*/
+	}
+	50% {
+	opacity: 0; /*中间状态 透明度为0*/
+	}
+	100% {
+	opacity: 1; /*结尾状态 透明度为1*/
+	}
+}
+ @keyframes fadeInKey {
+	0% {
+	opacity: 0; /*初始状态 透明度为0*/
+	}
+	50% {
+	opacity: 0; /*中间状态 透明度为0*/
+	}
+	100% {
+	opacity: 1; /*结尾状态 透明度为1*/
+	}
+}
+.fadeOut{
+   	-webkit-animation-name: fadeOutKey; /*动画名称*/
+	-webkit-animation-duration: 1.2s; /*动画持续时间*/
+	-webkit-animation-iteration-count: 1; /*动画次数*/
+	-webkit-animation-delay: 0s; /*延迟时间*/
+	opacity: 0;
+}
+   @-webkit-keyframes fadeOutKey {
+	0% {
+	opacity: 1; /*初始状态 透明度为0*/
+	}
+	50% {
+	opacity: 0; /*中间状态 透明度为0*/
+	}
+	100% {
+	opacity: 0; /*结尾状态 透明度为1*/
+	}
+}
+ @keyframes fadeOutKey {
+	0% {
+	opacity: 1; /*初始状态 透明度为0*/
+	}
+	50% {
+	opacity: 0; /*中间状态 透明度为0*/
+	}
+	100% {
+	opacity: 0; /*结尾状态 透明度为1*/
+	}
+}
+
+.tipBox{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.tipBox .tips_text{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   -webkit-transform: translateX(-50%) translateY(-50%);
+   transform: translateX(-50%) translateY(-50%);
+   background-color: #333;
+   opacity: 0.8;
+   color: #fff;
+   text-align: center;
+   padding: 10px;
+   border-radius: 4px;
+   font-size: 14px;
+}

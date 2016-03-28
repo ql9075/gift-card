@@ -1,0 +1,107 @@
+/*base*/
+* {
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    /*-webkit-user-select: none;*/
+}
+/* global */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+}
+*{margin: 0; padding: 0;}
+li{list-style-type: none;}
+ul, ol, li {
+    list-style-type: none;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+em, q, blockquote {
+    font-style: normal;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+a img {
+    border-width: 0;
+}
+img{
+    width:100%;
+}
+input, textarea {
+    outline: none;
+}
+.inline-block-middle{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+textarea {
+  -webkit-appearance: none;
+}
+input.clearInput{
+      -webkit-appearance: none !important;
+      margin: 0;
+      outline:none;
+      border:0;
+      border-radius:initial;
+}
+
+input.clearInput::-webkit-outer-spin-button,
+input.clearInput::-webkit-inner-spin-button{
+    -webkit-appearance: none !important;
+    margin: 0;
+}
+
+input.clearInput[type="number"]{-moz-appearance:textfield;}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.wrapperBox{
+  overflow: hidden;
+}
+.btn_commit{
+  border-radius: 4px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #d84b4b;
+  color: #fff;
+  font-size: 16px;
+  display: block;
+  text-align: center;
+}
+.btn_cancel{
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  height: 38px;
+  line-height: 38px;
+  background-color: #fff;
+  color: #848689;
+}
+.disable{
+  background-color: #F0F0F0;
+  color: #D4D4D4;
+  border: none;
+}

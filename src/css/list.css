@@ -1,0 +1,241 @@
+/*tab conetnt*/
+.list-header .tabWrapper{
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  display: -webkit-flex;/*新版*/
+  display: -moz-box;/*旧版*/
+  display: flex;/*新标准版 opera , firefox*/
+}
+.list-header .tablist{
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #fff;
+  border-right: 1px solid #e0e0e0;
+  color: #999999;
+  width: 50%;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  cursor: pointer;
+  position: relative;
+  margin: 10px 0;
+  padding: 5px 0;
+}
+.list-header .tablist span{
+  height: 100%;
+  display: inline-block;
+}
+.list-header .tablist.current span{
+  color: #f15353;
+  position: relative;
+}
+.list-header .tablist.current span::after{
+  content: "";
+  position: absolute;
+  bottom: -15px;;
+  left: 50%;
+  height: 2px;
+  width: 100%;
+  background-color: #f15353;
+  z-index: 11;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.tags{
+  background-color: #f8f8f8;
+  padding: 15px 0 5px 0;
+  border-bottom: 1px solid #e0e0e0;
+  overflow-x: auto;
+  width: 100%;
+  position: relative;
+  z-index: 99;
+}
+.tags .tabWrapper{
+  min-width: 100%;
+}
+.tags .tablist{
+  font-size: 14px;
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  color: #999;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.tags .tablist.current{
+  color: #f15353;
+}
+
+.list-content{
+  position: relative;
+}
+.productsCont{
+  position: absolute;
+  top: 57px;
+  left: 0;
+  width: 100%;
+  overflow: auto;
+}
+.productsCont li{
+  border-bottom: 1px solid #e0e0e0;
+  padding: 15px;
+  padding-right: 0;
+}
+
+.productWrapper{
+  overflow: hidden;
+}
+.ProductsPic{
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  width: 90px;
+  height: 90px;
+  float: left;
+  vertical-align: middle;
+  line-height: 90px;
+  text-align: center;
+  margin-right: 20px;
+}
+.ProductsPic img{
+  width: 80px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.ProductsInfo {
+  margin-right: 15px;
+}
+.ProductsInfo h2 a{
+  color: #252525;
+  line-height: 20px;
+  font-size: 17px;
+  margin-bottom: 5px;
+  display: block;
+}
+.ProductsInfo .product_price{
+  color: #f15353;
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+.ProductsInfo .product_price i{
+  font-style: normal;
+  padding-right: 3px;
+}
+.ProductsInfo .product_number .numbers{
+  text-align: center;
+  height: 22px;
+  width: 50px;
+  border:0;
+  border-top:1px solid #848689;
+  border-bottom:1px solid #848689;
+  font-size: 14px;
+  /*-webkit-appearance: none !important;
+  border-radius:initial;*/
+}
+.ProductsInfo .product_number a{
+  border:1px solid #848689;
+  height: 22px;
+  line-height: 22px;
+  width: 20px;
+  text-align: center;
+  color: #444a4d;
+}
+.ProductsInfo .product_number .reduce{
+  border-top-left-radius:2px;
+  border-bottom-left-radius:2px;
+}
+.ProductsInfo .product_number .add{
+  border-top-right-radius:2px;
+  border-bottom-right-radius:2px;
+}
+.ProductsInfo .product_number a.disable{
+  color: #DFDFDF;
+  background-color: #fff;
+}
+
+/*实名验证弹层*/
+.realNameBox h3{
+  color: #4d4d4d;
+  font-weight: normal;
+  font-size: 17px;
+}
+.realNameBox .realNameBox_cont{
+  text-align: left;
+  margin: 20px auto 0 auto;
+  border-bottom: 1px solid #fff;
+}
+.realNameBox .realNameBox_cont li{
+  margin-bottom: 10px;
+  color: #4d4d4d;
+}
+.realNameBox .realNameBox_cont li .title{
+  margin-right: 10px;
+  margin-top: 10px;
+  font-size: 15px;
+  min-width: 19%;
+  text-align: right;
+  float: left;
+}
+.realNameBox .realNameBox_cont li input{
+  width:99%;
+  border: 1px solid #d7d7d7;
+  color: #252525;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 4px;
+  text-indent: 10px;
+}
+.realNameBox .realNameBox_cont .tips{
+  margin: 5px 0;
+  text-align: right;
+  color: #a0a0a0;
+  border-bottom: 1px solid #d7d7d7;
+  padding: 10px 0;
+}
+.realNamePop .popUp-content{
+  background-color: #f8f8f8;
+}
+.realNamePop .popUp .contentBox{
+  margin: 0;
+  padding: 5px;
+}
+.realNamePop .popUp .btnBox{
+  display: -webkit-flex;/*新版*/
+  display: -moz-box;/*旧版*/
+  display: flex;/*新标准版 opera , firefox*/
+}
+.realNamePop .popUp .btnBox > span{
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}
+.realNamePop .popUp .pop_btn{
+  background-color: #fff;
+  border: 1px solid #b7b7b7;
+  color: #4d4d4d;
+  display: block;
+}
+.realNamePop .popUp .pop_btn.commit{
+  background-color: #f25555;
+  border:none;
+  color: #fff;
+}
+.realNamePop .popUp .pop_btn.disable{
+  background-color: #f0f0f0;
+  border:none;
+  color: #D4D4D4;
+}
+.realNamePop .error_tips{
+  padding: 10px 0 0 0;
+  color: #f15353;
+}
+
+.tabWrapper.fixedTab{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}

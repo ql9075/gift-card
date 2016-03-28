@@ -1,0 +1,91 @@
+body{
+  padding-bottom: 60px;
+}
+/*mini cart*/
+.minCart{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+	font-size:19px;
+	text-align: center;
+	display: block;
+	z-index: 998;
+  height: 60px;
+  line-height: 60px;
+}
+.miniCartLayer{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: .8;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  z-index: 1;
+}
+.miniCartCont{
+  z-index: 2;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+}
+.minCartIcon,
+.minCartInfo,
+.miniCartCont,
+.Tappable-balance{
+  display: inline-block;
+  vertical-align: middle;
+}
+.minCartInfo{
+  margin-left: 10px;
+}
+.Tappable-balance{
+  width: 35%;
+}
+.miniCartCont{
+  width: 65%;
+  text-align: left;
+}
+.miniCartWrapper .balance{
+	font-size:20px;
+	color:#ffffff;
+	text-align: center;
+	display: inline-block;
+  width: 35%;
+	z-index: 108;
+	background-color: #f15353;
+  position: relative;
+}
+.minCartIcon{
+  height: 26px;
+  width: 30px;
+  background: url('../img/mini-cart.png') no-repeat 0 0;
+  background-size: 100%;
+  display: inline-block;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.minCartNumber{
+  position: absolute;
+  top: -10px;
+  left: 15px;
+  background-color: #fff;
+  color: #f15353;
+  font-size: 13px;
+  padding: 0px 8px;
+  height: 18px;
+  line-height: 20px;
+  border-radius: 10px;
+}
+.minCartInfo i,
+.minCartInfo b{
+  font-style: normal;
+  display: inline-block;
+  vertical-align: middle;
+}
+.minCartInfo i{
+  margin-right: 10px;
+}

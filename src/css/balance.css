@@ -1,0 +1,636 @@
+body.BalanceContent{
+  background-color: #f0f2f5;
+}
+.addh{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.addw{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.currency{
+  font-style: normal;
+  color: #f15353;
+  padding-right: 5px;
+}
+.price{
+  color: #f15353;
+}
+
+.border-bottom-e1e1e1{
+  border-bottom: 1px solid #e1e1e1;
+}
+.border-top-e1e1e1{
+  border-top: 1px solid #e1e1e1;
+}
+
+.BalanceContent section{
+  border: 1px solid #e1e1e1;
+  border-left: none;
+  border-right: none;
+  margin-top: 10px;
+  color: #848689;
+  background-color: #fff;
+}
+.BalanceContent > div > a{
+  display: block;
+}
+.BalanceContent > div > a:active{
+  background-color: #f6f6f6;
+}
+.BalanceContent .AddressBox{
+  color: #888888;
+  background: #fffaf3;
+  border:none;
+  padding: 1px 0;
+}
+.BalanceContent .arrow-right{
+  position: relative;
+  padding-right: 0;
+}
+.BalanceContent .arrow-right > div:first-child{
+  padding-right: 45px;
+}
+.BalanceContent .arrow-right::after{
+  content: "";
+  background: url('../img/arrow-right.png') no-repeat 0 0;
+  height: 18px;
+  width: 20px;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 10px;
+}
+
+.BalanceContent .AddressBox_content{
+  position: relative;
+  padding:20px;
+}
+.BalanceContent .AddressBox_content::before,
+.BalanceContent .AddressBox_content::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background: url('../img/address-border.png') repeat-x 0 0;
+}
+.BalanceContent .AddressBox_content::after{
+  bottom: 0;
+  top: auto;
+}
+.BalanceContent .ad_Info{
+  color: #434343;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+
+.BalanceContent .ad_Info .ad_user,
+.BalanceContent .ad_Info .ad_phone{
+  position: relative;
+  padding-left: 25px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.BalanceContent .ad_Info .ad_user::before,
+.BalanceContent .ad_Info .ad_phone::before{
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: url('../img/address-user.png') no-repeat 0 0;
+  background-size:cover;
+}
+.BalanceContent .ad_Info .ad_phone::before{
+  background: url('../img/address-phone.png') no-repeat 0 0;
+  height: 20px;
+  width: 20px;
+  background-size: contain;
+  left: 7px;
+  top: 4px;
+}
+.ad_location{
+  line-height: 21px;
+}
+.orderIdBox span{
+  display: inline-block;
+  vertical-align: middle;
+}
+.order_products ul{
+  overflow: hidden;
+}
+.order_products li{
+  padding: 7px 0;
+}
+.order_products li.showPic{
+  float: left;
+  position: relative;
+}
+.order_products li.showPic:nth-child(3)::after{
+  color: #434343;
+  content: "...";
+  position: absolute;
+  top: 50%;
+  right: -30px;
+  width: 20px;
+  height: 10px;
+  line-height: 4px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.order_products li .picBox{
+  width: 50px;
+  float: left;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  padding: 0 7px;
+  vertical-align: middle;
+}
+.order_products li .picBox img{
+  vertical-align: middle;
+  display: inline-block;
+}
+.order_products .order_products_cont{
+  overflow: hidden;
+  margin-top: 10px;
+}
+.order_products h2{
+  margin: 0 0 15px 0;
+}
+.order_products .number{
+  float: left;
+}
+.order_products .price{
+  position: absolute;
+  right: 50px;
+  bottom: 10px;
+}
+.order_products .price.multiPic{
+  bottom: auto;
+  top:50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.PayDeliveryWay{
+  overflow: hidden;
+}
+.PayDeliveryWay .left{
+  margin-top: 13px;
+  color: #919599;
+}
+.PayDeliveryWay .right > div{
+  color: #919599;
+}
+.PayDeliveryWay .right > div:first-child{
+  margin-bottom: 10px;
+}
+.PayDeliveryTime{
+   text-align: center;
+   margin: 10px 0;
+   background-color: #f6f6f6;
+   color: #919599;
+   padding: 8px 0;
+   margin: 15px 20px 0 20px;
+}
+
+.invoice{
+  overflow: hidden;
+  color: #919599;
+}
+
+.total_box_list{
+  padding-bottom: 15px;
+}
+.total_box_list li{
+  overflow: hidden;
+  margin:15px 0 0 0;
+}
+.total_box_list li .left{
+}
+.total_box_list li .right{
+  min-width: 20%;
+  text-align: left;
+  color: #f15353;
+}
+.total_box_info{
+  margin-bottom: 15px;
+  text-align: right;
+}
+.total_box_info .total_price{
+  padding-bottom: 10px;
+  color:
+}
+.total_box_info .total_price .price{
+  padding-left: 10px;
+}
+.BalanceContent .buyAgainBox{
+  margin: 20px;
+  border: none;
+  background-color: none;
+}
+
+/*地址信息*/
+.BalanceAddress .AddressItem li{
+  padding: 10px 0;
+  border-bottom: 1px solid #e1e1e1;
+  padding-left: 10px;
+}
+.BalanceAddress .AddressBox{
+  display: inline-block;
+  width: 76%;
+  vertical-align: middle;
+  color: #848689;
+  padding-left: 5%;
+}
+.BalanceAddress .AddressBox.current{
+  width: 70%;
+  padding-left: 11%;
+  position: relative;
+}
+.BalanceAddress .AddressBox.current::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  background: url("../img/right-icon.png") no-repeat 0 0;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  background-size: 20px 14px;
+}
+.BalanceAddress .AddressBox .AddressBox_content{
+  padding-right: 10px;
+  position: relative;
+}
+.BalanceAddress .addressEditBtn{
+  display: inline-block;
+  vertical-align: middle;
+  width: 10%;
+  border-left: 1px solid #e1e1e1;
+  padding-left: 10px;
+  padding: 15px 0 15px 25px;
+}
+.BalanceAddress .addressEditBtn .addressEdit{
+  background: url('../img/edit-icon.png') no-repeat 0 0;
+  height: 20px;
+  width: 20px;
+  background-size: contain;
+  display: inline-block;
+}
+.BalanceAddress .ad_Info{
+    padding-bottom: 5px;
+    color: #f15353;
+    font-size: 16px;
+}
+.BalanceAddress .ad_user,
+.BalanceAddress .ad_phone{
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.default_icon{
+  display: inline-block;
+  vertical-align: middle;
+  padding: 3px;
+  color: #fff;
+  background-color: #d84b4b;
+  margin-right: 5px;
+  border-radius: 2px;
+  font-size: 12px;
+  position: absolute;
+  top: 23px;
+  left: 0;
+}
+.ad_location{
+  display: inline-block;
+  vertical-align: middle;
+}
+.default .AddressBox_content .ad_location{
+  text-indent: 40px;
+}
+.BalanceAddress .AddressItem .btn_commit{
+  margin: 20px 7%;
+}
+
+.BalanceAddress .addressEditBox{
+  padding: 15px 0;
+}
+.BalanceAddress .addressEditBox li{
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+.BalanceAddress .addressEditBox li .text_head{
+  margin-left: 5px;
+}
+.BalanceAddress .addressEditBox li .text_cont{
+  border: none;
+  font-size: 16px;
+  padding-left: 5px;
+  height: 30px;
+  min-width: 75%;
+}
+.BalanceAddress .addressEditBox .btn_commit{
+  margin: 20px 7%;
+}
+
+/*商品清单*/
+.BillGoods{
+  padding-left: 10px;
+  padding-top: 15px;
+}
+.BillGoods li{
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #e1e1e1;
+}
+.BillGoods .productWrapper{
+  position: relative;
+}
+.BillGoods .ProductsInfo{
+  margin-right: 45px;
+  overflow: hidden;
+}
+.BillGoods .product_number{
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #868489;
+}
+.BillGoods .product_number > span:first-child{
+  font-size: 17px;
+}
+.BillGoods .product_other{
+  position: absolute;
+  bottom:0;
+  height: 20px;
+  line-height: 20px;
+  background: url("../img/7-free-icon.png") no-repeat 0 0;
+  background-size: contain;
+  padding-left: 25px;
+  font-size: 14px;
+  color: #6679b3;
+}
+
+/*支付配送*/
+.PayDelivery{
+}
+.PayDelivery h3{
+  font-size: 17px;
+  color: #333;
+  padding: 5px 0;
+}
+.PayDelivery .payWay,
+.PayDelivery .deliveryWay{
+  margin-bottom: 10px;
+  background: #fff;
+  padding: 10px 0 10px 10px;
+}
+.PayDelivery .deliveryWay .pic{
+  height: 30px;
+  width: 50px;
+  padding: 10px 0;
+}
+.PayDelivery .tabWrapper {
+  margin:10px 0;
+}
+.PayDelivery .deliveryTime{
+  border-top: 1px solid #e1e1e1;
+  padding-top: 15px;
+  position: relative;
+}
+.PayDelivery .deliveryTime strong{
+  display: block;
+  margin-bottom: 10px;
+}
+.PayDelivery .deliveryTime .selecteDate{
+  position: absolute;
+  top:20px;
+  right:10px;
+  background: url("../img/date-icon.png") no-repeat 0 0;
+  background-size: contain;
+  height: 22px;
+  width: 20px;
+  border: 0;
+}
+.PayDelivery .tablist{
+  border:1px solid #e1e1e1;
+  color:#919599;
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  padding:  0 10px;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+.PayDelivery .tablist.current{
+  border:1px solid #d84b4b;
+  color:#d84b4b;
+  padding-left: 8px;
+}
+.PayDelivery .tablist.current span{
+  background: url('../img/right-icon-big.png') no-repeat 0 4px;
+  background-size: 20px 14px;
+  padding-left: 26px;
+}
+.PayDeliveryCommit{
+  margin: 20px 10px;
+}
+
+/* 开具发票 */
+.Invoice > div{
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 10px;
+  background: #fff;
+  padding:10px;
+  color: #848689;
+  font-size: 14px;
+}
+.Invoice strong{
+  display: block;
+  font-weight: bold;
+  color: #333;
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+.Invoice .invoiceHead {
+  overflow: hidden;
+}
+.Invoice .invoiceContent{
+  padding: 0;
+}
+.Invoice .invoiceContent strong{
+  padding: 10px;
+}
+.Invoice .invoiceTitle textarea{
+  width: 100%;
+  min-height: 50px;
+  border: 1px solid #e1e1e1;
+  text-indent: 10px;
+  line-height: 30px;
+}
+.Invoice .invoiceContentTab .tablist {
+  border: 1px solid #e1e1e1;
+  border-left: 0;
+  border-bottom: 0;
+  padding: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  width: 39.5%;
+  padding: 3% 5%;
+  text-align: left;
+}
+.Invoice .invoiceContentTab .tablist span{
+    display: block;
+}
+.Invoice .invoiceContentTab .tablist.current{
+  color: #d84b4b;
+}
+.Invoice .invoiceContentTab .tablist.current span{
+  background: url('../img/right-icon-big.png') no-repeat 100% 0;
+  background-size: 20px 14px;
+  padding-right: 26px;
+}
+.Invoice .btn_commit{
+  margin: 20px;
+}
+.invoiceHeadBtn .switchBtn{
+  margin:0;
+  padding:0;
+  border:none;
+  width:62px;
+  height:32px;
+  position:relative;
+  color:#fff;
+  background:none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  display: block;
+}
+.invoiceHeadBtn .switchBtn:before,
+.invoiceHeadBtn .switchBtn:after{
+  position: absolute;
+  left:0;top:0;
+  content:'';
+}
+.invoiceHeadBtn .switchBtn:before{
+  transition: all 0.4s;
+  position:absolute;
+  top:0;right:0;bottom:0;left:0;
+  border-radius: 33px;
+  background:#fff;
+  border:2px solid #E5E5E5;
+}
+.invoiceHeadBtn .switchBtn:after{
+  transition: all 0.2s;
+  border-radius: 33px;
+  top:3px;
+  left:3px;
+  width:26px;
+  height:26px;
+  background:#fff;
+  box-shadow:0px 4px 8px rgba(0,0,0,0.3),0px 0px 2px rgba(0,0,0,0.3);
+  -webkit-animation: ios7CBox_after 0.4s;-webkit-animation-fill-mode:both;
+  -moz-animation: ios7CBox_after 0.4s;-moz-animation-fill-mode:both;
+}
+.invoiceHeadBtn .switchBtn:hover:after{
+  box-shadow:0px 4px 8px rgba(0,0,0,0.4),0px 0px 2px rgba(0,0,0,0.3);
+}
+.invoiceHeadBtn .switchBtn:focus:before{
+  border:2px solid #C6C6C6;
+}
+.invoiceHeadBtn .switchBtn:focus{
+  outline: none;
+}
+.invoiceHeadBtn .switchBtn.checked:before{
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  border-style:solid;
+  border-color: #f15353;
+  border-width: 12px 0 12px 62px;
+}
+.invoiceHeadBtn .switchBtn.checked:after{
+  -webkit-animation: ios7CBox_after_checked 0.4s;-webkit-animation-fill-mode:both;
+  -moz-animation: ios7CBox_after_checked 0.4s;-moz-animation-fill-mode:both;
+}
+.invoiceHeadBtn .switchBtn:active:after{
+  width:36px;
+}
+.invoiceHeadBtn .switchBtn.checked:active:after{
+  width:26px;
+}
+@-webkit-keyframes ios7CBox_after {
+  0% {left:34px;}
+  70% {left:0;}
+  100% {left:3px;}
+}
+@-moz-keyframes ios7CBox_after {
+  0% {left:34px;}
+  70% {left:0;}
+  100% {left:3px;}
+}
+@-webkit-keyframes ios7CBox_after_checked {
+  0% {left:4px;}
+  70% {left:36px;}
+  100% {left:34px;}
+}
+@-moz-keyframes ios7CBox_after_checked {
+  0% {left:4px;}
+  70% {left:36px;}
+  100% {left:34px;}
+}
+
+.invoiceHeadBtn .switchBtn:disabled{
+  opacity:0.6;
+}
+.invoiceHeadBtn .switchBtn:disabled:active:after{
+  width:26px;
+}
+.invoiceHeadBtn .switchBtn.checked:disabled:active:after{
+  width:26px;
+  margin-left:0px;
+}
+.invoiceHeadBtn .switchBtn:disabled:active:after{
+  width:26px;
+}
+.invoiceHeadBtn .switchBtn.checked:disabled:active:after{
+  width:26px;
+  margin-left:0px;
+}
+.invoiceHeadBtn .switchBtn:disabled:hover:after{
+  box-shadow:0px 4px 8px rgba(0,0,0,0.3),0px 0px 2px rgba(0,0,0,0.3);
+}
+.invoiceHeadBtn .switchBtn.checked:disabled:before{
+  border-color:#ddd;
+}
+
+
+/*iphone5 以下*/
+@media screen and (max-width:320px) {
+  .order_products li .picBox{
+    width: 40px;
+    padding: 0 5px;
+  }
+  .BalanceAddress .addressEditBox li .text_cont{
+    min-width: 70%;
+  }
+}

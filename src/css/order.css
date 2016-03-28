@@ -1,0 +1,206 @@
+body.orderItem{
+  background-color: #f0f2f5;
+}
+.addh{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.addw{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.currency{
+  font-style: normal;
+  color: #f15353;
+  padding-right: 5px;
+}
+.price{
+  color: #f15353;
+}
+
+.border-bottom-e1e1e1{
+  border-bottom: 1px solid #e1e1e1;
+}
+.border-top-e1e1e1{
+  border-top: 1px solid #e1e1e1;
+}
+
+.orderItemContent section{
+  border: 1px solid #e1e1e1;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 10px;
+  color: #848689;
+  background-color: #fff;
+}
+
+.orderIdBox span{
+  display: inline-block;
+  vertical-align: middle;
+}
+.orderItemContent .order_products li{
+  overflow: hidden;
+  border-bottom: 1px solid #e1e1e1;
+  padding: 7px 0;
+  position: relative;
+}
+.orderItemContent .order_products li.none{
+  border: 0;
+}
+.orderItemContent .order_products li .picBox{
+  width: 50px;
+  float: left;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  padding: 0 10px;
+  vertical-align: middle;
+}
+.orderItemContent .order_products li .picBox img{
+
+  vertical-align: middle;
+  display: inline-block;
+}
+.order_products .order_products_cont{
+  overflow: hidden;
+  margin-top: 10px;
+}
+.order_products_cont h2{
+  margin: 0 0 15px 0;
+  font-weight: normal;
+}
+.order_products_info .number{
+  float: left;
+}
+.order_products_info .price{
+  float: right;
+  color: #f15353;
+}
+.binding_title{
+  padding: 0 0 15px 0;
+}
+.binding_title em{
+  font-size: 18px;
+  padding-right: 10px;
+}
+.binding_btn{
+  width: 100%;
+  margin: 15px 0 0 0;
+}
+
+.payWay,
+.invoice{
+  overflow: hidden;
+  padding: 15px 0;
+}
+
+.total_box_list{
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+.total_box_list li{
+  overflow: hidden;
+  margin:15px 0 0 0;
+}
+.total_box_list li .left{
+}
+.total_box_list li .right{
+  min-width: 20%;
+  text-align: left;
+  color: #f15353;
+}
+.total_box_info{
+  margin-bottom: 15px;
+  text-align: right;
+}
+.total_box_info .total_price{
+  padding-bottom: 10px;
+  color:
+}
+.total_box_info .total_price .price{
+  padding-left: 10px;
+}
+.orderItemContent .buyAgainBox{
+  margin: 20px;
+  border: none;
+  background-color: none;
+}
+/*
+ 查询卡密码
+*/
+.checkPwd_title{
+  background: url("../img/arrow-bottom.png") no-repeat 100% 50%;
+  background-size: 6%;
+  height: 20px;
+  line-height: 20px;
+}
+.checkPwd_title.open{
+  background: url("../img/arrow-top.png") no-repeat 100% 50%;
+  background-size: 6%;
+}
+.checkPasswordInput{
+  border-top: 1px solid #e1e1e1;
+  padding: 10px 0;
+  text-align: right;
+}
+.checkPasswordInput .check_tips{
+  padding: 10px 0;
+  text-align: left;
+  line-height: 22px;
+}
+.checkPasswordInput .payPwd{
+  height: 35px;
+  line-height: 25px;
+  text-indent: 7px;
+  width: 100%;
+  display: block;
+  border-radius: 3px;
+  border: 1px solid #e1e1e1;
+  margin: 5px auto;
+}
+.checkPasswordInput .forgetPwd{
+  display: block;
+  padding: 10px 0;
+}
+.checkPasswordInput .btnBox{
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+.checkPasswordInput .btnBox > a{
+  text-align: center;
+  width: 45%;
+}
+.checkPasswordInput .btnBox .btn_cancel{
+  float: left;
+}
+.checkPasswordInput .btnBox .btn_commit{
+  float: right;
+}
+.cardInfo,
+.cardInfo p{
+  padding-bottom: 10px;
+}
+.cardInfo .cardTitle{
+  color: #f15353;
+  margin-bottom: 15px;
+}
+
+/*订单支付成功*/
+.OrderPaySuccess{
+
+}
+.OrderPaySuccess > section{
+  background-color: #fff;
+}
+.OrderPaySuccess .checkCradPassword{
+  color: #EF8486;
+  border-bottom: 1px solid #EF8486;
+  display: inline-block;
+  vertical-align: middle;
+}
+.OrderPaySuccess .btn_commit{
+  margin: 20px;
+}
+.OrderPaySuccess p{
+  text-align: center;
+}

@@ -1,0 +1,129 @@
+/*popUp*/
+.popUpShow{
+  display: block;
+}
+.popUpShow{
+  display: none;
+}
+.popBody{
+    overflow: hidden;
+}
+.popUp-layer{
+     background: rgba(0, 0, 0, 0.8);
+     display: -webkit-box;/*旧版*/
+    display: -webkit-flex;/*新版*/
+    display: -moz-box;/*旧版*/
+    display: flex;/*新标准版 opera , firefox*/
+     -webkit-align-content:center;
+           align-content:center;
+     /*老版本语法*/
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  /*混合版本语法*/
+  -ms-flex-align: center;
+  /*新版本语法*/
+  -webkit-align-items: center;
+  align-items: center;
+
+  /*水平居中*/
+  /*老版本语法*/
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  /*混合版本语法*/
+  -ms-flex-pack: center;
+  /*新版本语法*/
+  -webkit-justify-content: center;
+  justify-content: center;
+  overflow:hidden;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index:997;
+}
+.popUp-content{
+    width: 80%;
+    font-size: 13px;
+    padding: 4%;
+    color: #333;
+    background: #fff;
+    border-radius: 4px;
+    margin-top: -20%;
+    -webkit-align-content:center;
+           align-content:center;
+    -webkit-flex-flow:row wrap;
+       -moz-flex-flow:row wrap;
+                flex:row wrap;
+    display: -webkit-flex;/*新版*/
+    display: -moz-box;/*旧版*/
+    display: flex;/*新标准版 opera , firefox*/
+    /*垂直居中*/
+    /*老版本语法*/
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    /*混合版本语法*/
+    -ms-flex-align: center;
+    /*新版本语法*/
+    -webkit-align-items: center;
+    align-items: center;
+
+    /*水平居中*/
+    /*老版本语法*/
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    /*混合版本语法*/
+    -ms-flex-pack: center;
+    /*新版本语法*/
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+.pop_top_text{
+    font-size: 20px;
+    color: rgb(85, 85, 85);
+}
+.popUp .BtnBox{
+  display: -webkit-flex;/*新版*/
+  display: -moz-box;/*旧版*/
+  display: flex;/*新标准版 opera , firefox*/
+}
+.popUp .pop_btn{
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    text-align: center;
+    color: #fffefe;
+    background-color: #fc5761;
+    padding: 10px;
+    border-radius: 4px;
+    display: inline-block;
+    margin: 0 5px;
+}
+.popUp .pop_pic{
+    max-height: 134px;
+    max-width: 60%;
+    position: relative;
+}
+.popUp .pop_pic::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ddd;
+}
+.popUp .popa{
+    margin-top: 5%;
+}
+.popUp .popa.error{
+    color: #989898;
+}
+.popUp .popContentWrapper{
+  width: 100%;
+}
+.popUp .contentBox{
+  margin: 10px 0;
+  padding: 10px 15px;
+  text-align: center;
+}
